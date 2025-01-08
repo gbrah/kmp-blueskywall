@@ -1,4 +1,4 @@
-# Bluesky Social Feed KMP Application
+# Bluesky Social Feed
 
 ## Overview
 
