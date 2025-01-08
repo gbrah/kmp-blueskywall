@@ -30,3 +30,13 @@ class BlueSkyStaticUserInfos {
 
 ![Screenshot](screenshot.png)
 
+## Usage
+
+* You can deploy it on an android based terminal, Raspberry that can be projected during your event.
+* or a Raspberry pi 4 , you can download your IMG [here](https://konstakang.com/devices/rpi4/AOSP13/) and use ADB to push the APK
+
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
+
