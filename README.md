@@ -30,6 +30,55 @@ class BlueSkyStaticUserInfos {
 
 ![Screenshot](screenshot.png)
 
+## API Reference
+
+###   Request Auth Token
+
+To create a session, send a POST request to the following endpoint:
+
+```bash
+curl -X POST "https://api.bsky.social/xrpc/com.atproto.server.createSession" \
+-H "Content-Type: application/json" \
+-d '{
+  "identifier": "user@example.com",
+  "password": "your_password_here"
+}'  
+```
+
+### Response Example
+
+```json
+{
+  "did": "did:plc:exampledid",
+  "handle": "user.bsky.social",
+  "emailConfirmed": true,
+  "accessJwt": "your_access_jwt_here",
+  "refreshJwt": "your_refresh_jwt_here",
+  "active": true
+}
+```
+
+---
+
+# Request Feed
+
+To retrieve the author's feed, send a GET request to the following endpoint:
+
+```bash
+curl -X GET "https://api.bsky.social/xrpc/app.bsky.feed.getAuthorFeed?actor=user.bsky.social" \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer your_access_jwt_here"
+```
+
+### Response Example
+
+```json
+{
+  "feed": [
+    {
+      ...
+```
+
 ## Usage
 
 * You can deploy it on an android based terminal, Raspberry that can be projected during your event.
